@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@import "https://fonts.googleapis.com/css?family=Dosis:200|Roboto+Condensed:300";
+
+/* ---------- RESET ---------- */
+body {
+  margin: 0;
+  padding: 0;
+}
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,p,blockquote,fieldset,div,figure {
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,small {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul li,ol li {
+  list-style: none;
+}
+table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 100%;
+}
+caption {
+  text-align: left;
+}
+table,pre,code,select,input,textarea,kbd,var,ins,del,samp {
+  font-size: 100%;
+}
+address,cite,dfn,em,strong,var,th,ins,del,samp {
+  font-weight: normal;
+  font-style: normal;
+}
+a img {
+  border: 0;
+}
+fieldset {
+  border: none;
+}
+header,section,nav,aside,footer,article {
+  display: block;
+}
+
+/* ---------- COMMON ---------- */
+#wrapper {
+  color: #353535;
+  font-size: 16px;
+  font-family: "Roboto Condensed","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+/* ---------- .header ---------- */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 930px;
+  height: 535px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header__title {
+  font-size: 40px;
+}
+.header__title em {
+  font-weight: bold;
+}
+.header__note {
+  color:#777;
+  font-size: 20px;
+}
+
+/* ---------- .footer ---------- */
+.footer {
+  padding: 80px 0;
+  background: #eee;
+  text-align: center;
+}
+.footer__navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  font-size: 30px;
+  line-height: 30px;
+}
+.footer__naviItem {
+  margin: 0 20px;
+}
+.footer__naviItem a {
+  color: #353535;
+  text-decoration: none;
+}
+
+/* ---------- .common ---------- */
+.common:nth-child(odd) {
+  background: #eee;
+}
+.common__wrap {
+  width: 930px;
+  margin: 0 auto;
+  padding: 80px 10px;
+}
+.common__head {
+  font-size: 50px;
+  font-family: "Dosis";
+  text-align: center;
+  line-height: 50px;
+}
+.common__body {
+  margin-top: 80px;
+}
+
+/* ---------- .work ---------- */
+.work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.work:first-child {
+  margin-top: 0;
+}
+.work__item {
+  width: 280px;
+}
+.work__item a {
+  color: #353535;
+  line-height: 1;
+  text-decoration: none;
+}
+.work__itemImage img {
+  vertical-align: bottom;
+}
+.work__itemTitle {
+  margin-top: 10px;
+}
+.work__itemClient {
+  margin-top: 2px;
+  color: #999;
+  font-size: 14px;
+}
+
+/* ---------- .about ---------- */
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.about__item {
+  width: 280px;
+  padding-top: 130px;
+}
+.about__item dt {
+  margin: 30px 0;
+  font-size: 26px;
+  text-align: center;
+}
+.about__item--web {
+  background: url(../img/about_web_design.svg) no-repeat;
+}
+.about__item--dev {
+  background: url(../img/about_web_dev.svg) no-repeat;
+}
+.about__item--app {
+  background: url(../img/about_app_design.svg) no-repeat;
+}
