@@ -53,7 +53,7 @@ header,section,nav,aside,footer,article {
 }
 
 /* ---------- .header ---------- */
-.header {
+.header__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -76,6 +76,13 @@ header,section,nav,aside,footer,article {
 .header__note {
   color:#777;
   font-size: 20px;
+}
+.header--work .header__wrap {
+  height: 110px;
+}
+.header--work .header__title a {
+  color: #353535;
+  text-decoration: none;
 }
 
 /* ---------- .footer ---------- */
