@@ -74,7 +74,7 @@ header,section,nav,aside,footer,article {
   font-weight: bold;
 }
 .header__note {
-  color:#777;
+  color: #777;
   font-size: 20px;
 }
 .header--work .header__wrap {
@@ -87,8 +87,12 @@ header,section,nav,aside,footer,article {
 
 /* ---------- .footer ---------- */
 .footer {
-  padding: 80px 0;
   background: #eee;
+}
+.footer__wrap {
+  width: 930px;
+  margin: 0 auto;
+  padding: 80px 10px;
   text-align: center;
 }
 .footer__navi {
