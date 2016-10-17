@@ -243,35 +243,75 @@ header,section,nav,aside,footer,article {
 .design__title {
   width: 448px;
   font-size: 44px;
+  line-height: 50px;
 }
 .design__image {
   position: relative;
+}
+.design__image--01 {
   width: 482px;
   height: 258px;
 }
-.design__image--pc {
+.design__image--02 {
+  width: 386px;
+  height: 289px;
+}
+.design__imageItem {
   position: absolute;
   bottom: 0;
+}
+.design__imageItem--pc {
   left: 0;
   width: 450px;
   height: 258px;
   background: url(../img/work/device_01_pc.png);
   background-size: 450px 258px;
 }
-.design__image--pc img {
+.design__imageItem--pc img {
   margin: 14px 0 0 54px;
 }
-.design__image--sp {
-  position: absolute;
+.design__imageItem--sp {
   right: 0;
-  bottom: 0;
   width: 111px;
   height: 226px;
   background: url(../img/work/device_01_sp.png);
   background-size: 111px 226px;
 }
-.design__image--sp img {
+.design__imageItem--sp img {
   margin: 27px 0 0 7px;
+}
+.design__imageItem--01 {
+  z-index: 3;
+  left: 122px;
+  width: 141px;
+  height: 289px;
+  background: url(../img/work/device_02_01.png);
+  background-size: 141px 289px;
+}
+.design__imageItem--01 img {
+  margin: 34px 0 0 8px;
+}
+.design__imageItem--02 {
+  z-index: 2;
+  left: 0px;
+  width: 132px;
+  height: 269px;
+  background: url(../img/work/device_02_02.png);
+  background-size: 132px 269px;
+}
+.design__imageItem--02 img {
+  margin: 31px 0 0 9px;
+}
+.design__imageItem--03 {
+  z-index: 1;
+  right: 0px;
+  width: 140px;
+  height: 265px;
+  background: url(../img/work/device_02_03.png);
+  background-size: 140px 265px;
+}
+.design__imageItem--03 img {
+  margin: 20px 0 0 6px;
 }
 .design__body {
   width: 930px;
