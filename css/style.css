@@ -256,6 +256,10 @@ header,section,nav,aside,footer,article {
   width: 386px;
   height: 289px;
 }
+.design__image--03 {
+  width: 450px;
+  height: 258px;
+}
 .design__imageItem {
   position: absolute;
   bottom: 0;
@@ -331,7 +335,7 @@ header,section,nav,aside,footer,article {
 }
 
 /* ---------- .mockup ---------- */
-.mockup {
+.mockup--01 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -341,11 +345,15 @@ header,section,nav,aside,footer,article {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-.mockup__item {
+.mockup--01 .mockup__item {
   -webkit-box-flex: 1;
   box-flex: 1;
   flex: 1;
   width: 100%;
+  text-align: center;
+}
+.mockup--02 .mockup__item {
+  margin-top: 60px;
   text-align: center;
 }
 .mockup__item img {
