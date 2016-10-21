@@ -241,7 +241,10 @@ header,section,nav,aside,footer,article {
   padding: 0 10px;
 }
 .design__title {
-  width: 448px;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  flex: 1;
+  width: 100%;
   font-size: 44px;
   line-height: 50px;
 }
