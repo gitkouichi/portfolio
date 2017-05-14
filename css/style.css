@@ -245,7 +245,8 @@ header,section,nav,aside,footer,article {
 
 /* ---------- .design ---------- */
 .design__head {
-  background: #eee;
+  background: url(../img/design_bg.png);
+  background-size: 50%;
 }
 .design__wrap {
   display: -webkit-box;
