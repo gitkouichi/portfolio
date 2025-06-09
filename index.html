@@ -13,14 +13,17 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
   </head>
   <body>
     <div id="wrapper">
+      <canvas id="canvas"></canvas>
+
       <header id="header" class="haeder">
         <div class="header__wrap">
           <div class="header__head">
             <h1 class="header__title">IKEDA KOUICHI <em>PORTFOLIO</em></h1>
-            <p class="header__note">WEB & APP DESIGNER</p>
+            <p class="header__note">DIGITAL PRODUCT DESIGNER</p>
           </div>
         </div>
       </header>
@@ -32,8 +35,64 @@
             <div class="common__body">
               <ul class="work">
                 <li class="work__item">
+                  <a href="./work/17/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_12.png" width="280" height="158"></dd>
+                      <dd class="work__itemTitle">エムスリー データ・リサーチ</dd>
+                      <dd class="work__itemClient">m3.com</dd>
+                    </dl>
+                  </a>
+                </li>
+                <li class="work__item">
+                  <a href="./work/16/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_13.png" width="280" height="158"></dd>
+                      <dd class="work__itemTitle">問トレアプリ</dd>
+                      <dd class="work__itemClient">テコプラ</dd>
+                    </dl>
+                  </a>
+                </li>
+                <li class="work__item">
+                  <a href="./work/15/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_14.png" width="280" height="158"></dd>
+                      <dd class="work__itemTitle">m3.com CAREERアプリ</dd>
+                      <dd class="work__itemClient">m3.com CAREER</dd>
+                    </dl>
+                  </a>
+                </li>
+                <!--
+                <li class="work__item">
+                  <a href="./work/14/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_15.png" width="280" height="158"></dd>
+                      <dd class="work__itemTitle">m3 Web講演会アプリ</dd>
+                      <dd class="work__itemClient">m3.com</dd>
+                    </dl>
+                  </a>
+                </li>
+                <li class="work__item">
+                  <a href="./work/13/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_16.png" width="280" height="158"></dd>
+                      <dd class="work__itemTitle">m3 ToDo Plusアプリ</dd>
+                      <dd class="work__itemClient">m3.com</dd>
+                    </dl>
+                  </a>
+                </li>
+                <li class="work__item">
+                  <a href="./work/12/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_17.jpg" width="280" height="158"></dd>
+                      <dd class="work__itemTitle">Super M3 DAY</dd>
+                      <dd class="work__itemClient">m3.com</dd>
+                    </dl>
+                  </a>
+                </li>
+                -->
+                <li class="work__item">
                   <a href="./work/01/">
-                    <dl>
+                    <dl class="work__itemWrap">
                       <dd class="work__itemImage"><img src="img/work_thumb_01.jpg" width="280" height="158"></dd>
                       <dd class="work__itemTitle">ICHIRO ｢記録｣と｢記憶｣</dd>
                       <dd class="work__itemClient">Sportsnavi</dd>
@@ -42,7 +101,7 @@
                 </li>
                 <li class="work__item">
                   <a href="./work/02/">
-                    <dl>
+                    <dl class="work__itemWrap">
                       <dd class="work__itemImage"><img src="img/work_thumb_02.png" width="280" height="158"></dd>
                       <dd class="work__itemTitle">スポナビ プロ野球速報アプリ</dd>
                       <dd class="work__itemClient">Sportsnavi</dd>
@@ -50,96 +109,86 @@
                   </a>
                 </li>
                 <li class="work__item">
-                  <a href="./work/09/">
-                    <dl>
-                      <dd class="work__itemImage"><img src="img/work_thumb_09.png" width="280" height="158"></dd>
+                  <a href="./work/03/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_03.png" width="280" height="158"></dd>
                       <dd class="work__itemTitle">スポーツナビアプリ</dd>
                       <dd class="work__itemClient">Sportsnavi</dd>
                     </dl>
                   </a>
                 </li>
-              </ul>
-
-              <ul class="work">
                 <li class="work__item">
-                  <a href="./work/03/">
-                    <dl>
-                      <dd class="work__itemImage"><img src="img/work_thumb_03.jpg" width="280" height="158"></dd>
+                  <a href="./work/04/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_04.jpg" width="280" height="158"></dd>
                       <dd class="work__itemTitle">KEISUKE HONDA 1986-2014 Chronological</dd>
                       <dd class="work__itemClient">Sportsnavi</dd>
                     </dl>
                   </a>
                 </li>
                 <li class="work__item">
-                  <a href="./work/10/">
-                    <dl>
-                      <dd class="work__itemImage"><img src="img/work_thumb_10.jpg" width="280" height="158"></dd>
+                  <a href="./work/05/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_05.jpg" width="280" height="158"></dd>
                       <dd class="work__itemTitle">INTERVIEW with KEI NISHIKORI</dd>
                       <dd class="work__itemClient">Sportsnavi</dd>
                     </dl>
                   </a>
                 </li>
                 <li class="work__item">
-                  <a href="./work/05/">
-                    <dl>
-                      <dd class="work__itemImage"><img src="img/work_thumb_05.jpg" width="280" height="158"></dd>
+                  <a href="./work/06/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_06.jpg" width="280" height="158"></dd>
                       <dd class="work__itemTitle">錦織圭 グランドスラム挑戦の軌跡</dd>
                       <dd class="work__itemClient">Sportsnavi</dd>
                     </dl>
                   </a>
                 </li>
-              </ul>
-
-              <ul class="work">
                 <li class="work__item">
-                  <a href="./work/04/">
-                    <dl>
-                      <dd class="work__itemImage"><img src="img/work_thumb_04.png" width="280" height="158"></dd>
+                  <a href="./work/07/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_07.png" width="280" height="158"></dd>
                       <dd class="work__itemTitle">Jリーグ リニューアル</dd>
                       <dd class="work__itemClient">Sportsnavi</dd>
                     </dl>
                   </a>
                 </li>
                 <li class="work__item">
-                  <a href="./work/06/">
-                    <dl>
-                      <dd class="work__itemImage"><img src="img/work_thumb_06.png" width="280" height="158"></dd>
+                  <a href="./work/08/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_08.png" width="280" height="158"></dd>
                       <dd class="work__itemTitle">MLB 一球速報</dd>
                       <dd class="work__itemClient">Sportsnavi</dd>
                     </dl>
                   </a>
                 </li>
                 <li class="work__item">
-                  <a href="./work/08/">
-                    <dl>
-                      <dd class="work__itemImage"><img src="img/work_thumb_08.png" width="280" height="158"></dd>
-                      <dd class="work__itemTitle">クイズ オリンピック・ムーブメント</dd>
-                      <dd class="work__itemClient">JOC</dd>
-                    </dl>
-                  </a>
-                </li>
-              </ul>
-
-              <ul class="work">
-                <li class="work__item">
-                  <a href="./work/07/">
-                    <dl>
-                      <dd class="work__itemImage"><img src="img/work_thumb_07.png" width="280" height="158"></dd>
-                      <dd class="work__itemTitle">参議院選挙2013</dd>
-                      <dd class="work__itemClient">Yahoo!みんなの政治</dd>
-                    </dl>
-                  </a>
-                </li>
-                <li class="work__item">
-                  <a href="./work/11/">
-                    <dl>
-                      <dd class="work__itemImage"><img src="img/work_thumb_11.png" width="280" height="158"></dd>
+                  <a href="./work/09/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_09.png" width="280" height="158"></dd>
                       <dd class="work__itemTitle">平昌オリンピック</dd>
                       <dd class="work__itemClient">Sportsnavi</dd>
                     </dl>
                   </a>
                 </li>
-                <li class="work__item"></li>
+                <li class="work__item">
+                  <a href="./work/10/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_10.png" width="280" height="158"></dd>
+                      <dd class="work__itemTitle">クイズ オリンピック・ムーブメント</dd>
+                      <dd class="work__itemClient">JOC</dd>
+                    </dl>
+                  </a>
+                </li>
+                <li class="work__item">
+                  <a href="./work/11/">
+                    <dl class="work__itemWrap">
+                      <dd class="work__itemImage"><img src="img/work_thumb_11.png" width="280" height="158"></dd>
+                      <dd class="work__itemTitle">参議院選挙2013</dd>
+                      <dd class="work__itemClient">Yahoo!みんなの政治</dd>
+                    </dl>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -174,10 +223,12 @@
             <li class="footer__naviItem"><a href="#work">WORK</a></li>
             <li class="footer__naviItem"><a href="#about">ABOUT</a></li>
           </ul>
-          <small class="footer__copyright">© 2018 · IKEDA KOUICHI PORTFOLIO · ALL RIGHTS RESERVED</small>
+          <small class="footer__copyright">© 2025 · IKEDA KOUICHI PORTFOLIO · ALL RIGHTS RESERVED</small>
         </div>
       </footer>
     </div>
   </body>
   <script src="js/jquery.top.js" type="text/javascript"></script>
+  <script src="js/webgl.js" type="text/javascript"></script>
+
 </html>
