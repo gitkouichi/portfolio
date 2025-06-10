@@ -528,6 +528,33 @@ header,section,nav,aside,footer,article {
   margin-top: 5px;
   border-radius: 15px;
 }
+.design__image--06 {
+  width: 451px;
+  height: 271px;
+}
+.design__image--06 .design__imageItem--pc {
+  width: 451px;
+  height: 271px;
+  background: url(../img/work/device_04_pc.png);
+  background-size: 451px 271px;
+}
+.design__image--06 .design__imageItem--pc::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: 0;
+  display: block;
+  width: 45px;
+  height: 8px;
+  margin: 0 auto;
+  background-color: #010101;
+  border-radius: 0 0 2px 2px;
+}
+.design__image--06 .design__imageItem--pc img {
+  margin-top: 8px;
+  border-radius: 4px;
+}
 .design__body {
   width: 930px;
   margin: 0 auto;
