@@ -53,13 +53,21 @@ header,section,nav,aside,footer,article {
   font-size: 16px;
   font-family: "Roboto Condensed","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 }
-#canvas {
+#canvas--top {
   position: absolute;
   top: 0;
   left: 0;
   display: block;
   width: 100vw;
   height: 100vh;
+}
+#canvas--work {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100vw;
+  height: 100%;
 }
 
 /* ---------- .header ---------- */
@@ -325,8 +333,8 @@ header,section,nav,aside,footer,article {
 
 /* ---------- .design ---------- */
 .design__head {
-  background: url(../img/design_bg.png);
-  background-size: 50%;
+  overflow: hidden;
+  position: relative;
 }
 .design__wrap {
   display: -webkit-box;
@@ -343,6 +351,7 @@ header,section,nav,aside,footer,article {
   padding: 0 10px;
 }
 .design__title {
+  position: relative;
   -webkit-box-flex: 1;
   box-flex: 1;
   flex: 1;
