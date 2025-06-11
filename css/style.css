@@ -271,7 +271,6 @@ header,section,nav,aside,footer,article {
   overflow: hidden;
   width: 280px;
   height: 158px;
-  background-color: #000;
 }
 .work__itemImage img {
   vertical-align: bottom;
@@ -582,27 +581,38 @@ header,section,nav,aside,footer,article {
 }
 
 /* ---------- .mockup ---------- */
-.mockup--01 {
+.mockup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
 }
-.mockup--01 .mockup__item {
-  -webkit-box-flex: 1;
-  box-flex: 1;
-  flex: 1;
+.mockup__item {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.mockup__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  text-align: center;
+  height: 40px;
+  background: url(../img/work/icon_expand.svg) center center no-repeat #77777788;
+  background-size: 32px auto;
+  transform: translateY(40px);
+  transition: transform 0.2s;
 }
-.mockup--02 .mockup__item {
-  margin-top: 60px;
-  text-align: center;
+.mockup__item:hover::after {
+  transform: translateY(0);
 }
 .mockup__item img {
   vertical-align: bottom;
+  object-fit: cover;
+  object-position: center top;
 }
