@@ -392,7 +392,7 @@ header,section,nav,aside,footer,article {
   right: 0;
   width: 111px;
   height: 226px;
-  background: url(../img/work/device_01_sp.png);
+  background: url(../img/work/device_01_sp_black.png);
   background-size: 111px 226px;
 }
 .design__imageItem--sp img {
@@ -405,7 +405,7 @@ header,section,nav,aside,footer,article {
   width: 141px;
   height: 289px;
   margin: 0 auto;
-  background: url(../img/work/device_02_01.png);
+  background: url(../img/work/device_01_sp_white.png);
   background-size: 141px 289px;
 }
 .design__imageItem--01 img {
@@ -416,7 +416,7 @@ header,section,nav,aside,footer,article {
   left: 0px;
   width: 132px;
   height: 269px;
-  background: url(../img/work/device_02_02.png);
+  background: url(../img/work/device_01_sp_black.png);
   background-size: 132px 269px;
 }
 .design__imageItem--02 img {
@@ -427,7 +427,7 @@ header,section,nav,aside,footer,article {
   right: 0px;
   width: 140px;
   height: 265px;
-  background: url(../img/work/device_02_03.png);
+  background: url(../img/work/device_01_sp_and.png);
   background-size: 140px 265px;
 }
 .design__imageItem--03 img {
@@ -440,7 +440,7 @@ header,section,nav,aside,footer,article {
 .design__image--04 .design__imageItem--pc {
   width: 451px;
   height: 271px;
-  background: url(../img/work/device_04_pc.png);
+  background: url(../img/work/device_02_pc.png);
   background-size: 451px 271px;
 }
 .design__image--04 .design__imageItem--pc::after {
@@ -463,7 +463,7 @@ header,section,nav,aside,footer,article {
 .design__image--04 .design__imageItem--sp {
   width: 120px;
   height: 243px;
-  background: url(../img/work/device_04_sp.png);
+  background: url(../img/work/device_02_sp.png);
   background-size: 120px 243px;
 }
 .design__image--04 .design__imageItem--sp::after {
@@ -490,7 +490,7 @@ header,section,nav,aside,footer,article {
 .design__image--05 .design__imageItem--01 {
   width: 142px;
   height: 289px;
-  background: url(../img/work/device_05_01.png);
+  background: url(../img/work/device_02_sp.png);
   background-size: 142px 289px;
 }
 .design__image--05 .design__imageItem--01::after {
@@ -514,7 +514,7 @@ header,section,nav,aside,footer,article {
 .design__image--05 .design__imageItem--03 {
   width: 132px;
   height: 267px;
-  background: url(../img/work/device_05_02.png);
+  background: url(../img/work/device_02_sp.png);
   background-size: 132px 267px;
 }
 .design__image--05 .design__imageItem--02::after,
@@ -534,34 +534,7 @@ header,section,nav,aside,footer,article {
 .design__image--05 .design__imageItem--02 img,
 .design__image--05 .design__imageItem--03 img {
   margin-top: 5px;
-  border-radius: 15px;
-}
-.design__image--06 {
-  width: 451px;
-  height: 271px;
-}
-.design__image--06 .design__imageItem--pc {
-  width: 451px;
-  height: 271px;
-  background: url(../img/work/device_04_pc.png);
-  background-size: 451px 271px;
-}
-.design__image--06 .design__imageItem--pc::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  right: 0;
-  left: 0;
-  display: block;
-  width: 45px;
-  height: 8px;
-  margin: 0 auto;
-  background-color: #010101;
-  border-radius: 0 0 2px 2px;
-}
-.design__image--06 .design__imageItem--pc img {
-  margin-top: 8px;
-  border-radius: 4px;
+  border-radius: 17px;
 }
 .design__body {
   width: 930px;
